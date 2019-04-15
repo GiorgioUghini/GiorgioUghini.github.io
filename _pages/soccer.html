@@ -3,7 +3,7 @@ layout: home-page
 title: Soccer
 permalink: /soccer/
 ---
-
+<!--
 {% capture get_items %}
 {% for cat in site.categories %}
 {{ cat | first | replace: ' ', '_' }}
@@ -24,4 +24,22 @@ permalink: /soccer/
    {% if post.url %}<li><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></li>{% endif %}
 {% endfor %}
 </ul>
-{% endfor %}
+{% endfor %}-->
+<ol class="post-card-box clearfix">
+  {% for post in paginator.posts %}
+  <li>
+    <div class="post-card">
+      <a href="{{post.url | prepend: site.baseurl}}" class="post-card-image" style="background-image: url( {{ "/assets/img/" | prepend: site.baseurl | append : post.img}} )">
+      </a>
+
+      <div class="post-card-body">
+        {% for tag in post.tags %}
+        <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">|&#32;{{ tag }}</a>
+        {% endfor %}
+        <a href="{{post.url | prepend: site.baseurl}}" class="post-card-link"><h3 class="post-card-title">{{post.title}}</h3></a>
+      </div>
+
+    </div>
+  </li>
+  {% endfor %}
+</ol>
