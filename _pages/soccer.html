@@ -4,7 +4,7 @@ title: Soccer
 permalink: /soccer/
 ---
 <ol class="post-card-box clearfix">
-  {% for post in paginator.posts %}
+  {% for post in category[0] %}
   <li>
     <div class="post-card">
       <a href="{{post.url | prepend: site.baseurl}}" class="post-card-image" style="background-image: url( {{ "/assets/img/" | prepend: site.baseurl | append : post.img}} )">
