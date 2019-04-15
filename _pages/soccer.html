@@ -27,7 +27,7 @@ permalink: /soccer/
 {% endfor %}-->
 
 <ol class="post-card-box clearfix">
-  {% for post in site.categories[blog] %}
+  {% for post in site.categories["blog"] %}
   <li>
     <div class="post-card">
       <a href="{{post.url | prepend: site.baseurl}}" class="post-card-image" style="background-image: url( {{ "/assets/img/" | prepend: site.baseurl | append : post.img}} )">
