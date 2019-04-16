@@ -6,12 +6,7 @@
       </div>
       <nav class="main-nav">
         <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
-        <ul>
-          <li><a href="{{site.baseurl}}/">Home page</a></li>
-          <li><a href="{{site.baseurl}}/about">About me</a></li>
-          <li><a href="{{site.baseurl}}/trip">My favorite trips</a></li>
-          <li><a href="{{site.baseurl}}/orto">Il mio orto</a></li>
-        </ul>
+        {% include menu.html %}
       </nav>
       <p class="logo"><a href="{{site.baseurl}}/">{{ site.author }}</a></p>
       <div class="search-icon-container">
