@@ -29,7 +29,7 @@ Basically, static websites are strongly recommended to show a company work and t
 
 But let's dive better into some advantage of static website.
 
-![White and green sheetwork](../img/post-about-website-1.jpg)
+![White and green sheetwork](../assets/img/post-about-website-1.jpg)
 
 ## What you like most in a static website?
 ### It's completely free!
